@@ -1,0 +1,219 @@
+/* ==================================================
+   RESET GERAL
+================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+
+/* ==================================================
+   CONTAINER
+================================================== */
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.header{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:100;
+    padding:25px 0;
+}
+
+.header-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo img{
+    width:140px;
+}
+
+.menu{
+    display:flex;
+    gap:20px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    background:#4f6870;
+    padding:10px 30px;
+    border-radius:50px;
+    font-size:14px;
+    transition:.3s;
+}
+
+.menu a:hover{
+    transform:translateY(-2px);
+}
+
+
+/* ==================================================
+   HERO SECTION
+================================================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding-top:120px;
+    background:#f5f5f5;
+}
+
+.hero-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-content h1{
+    font-size:60px;
+    line-height:1.1;
+    color:#2f3d40;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.hero-content p{
+    font-size:18px;
+    color:#666;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+
+/* ==================================================
+   BOTÃO PRINCIPAL
+================================================== */
+
+.btn-primary{
+    display:inline-block;
+    background:#4f6870;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+
+/* ==================================================
+   SEÇÃO SOBRE
+================================================== */
+
+.sobre{
+    padding:120px 0;
+    background:white;
+}
+
+.sobre-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.sobre-left{
+    padding-right:60px;
+    border-right:1px solid #d9d9d9;
+}
+
+.sobre-left h2{
+    font-size:42px;
+    color:#31454a;
+    margin-bottom:20px;
+}
+
+.sobre-left p{
+    color:#666;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.sobre-right{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.sobre-card h3{
+    color:#31454a;
+    margin-bottom:10px;
+    font-size:28px;
+}
+
+.sobre-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+
+/* ==================================================
+   RESPONSIVIDADE (CELULAR)
+================================================== */
+
+@media(max-width:768px){
+
+    /* HERO */
+
+    .hero-container{
+        grid-template-columns:1fr;
+    }
+
+    .hero-content{
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    /* SOBRE */
+
+    .sobre-grid{
+        grid-template-columns:1fr;
+    }
+
+    .sobre-left{
+        border-right:none;
+        padding-right:0;
+    }
+
+}
