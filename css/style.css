@@ -209,45 +209,73 @@ img{
    RESULTADOS
 ================================================== */
 
+/* ==================================================
+   RESULTADOS
+================================================== */
+
 .resultados{
-    background:#53696f;
-    padding:100px 0;
+    background:#566f75;
+    padding:90px 0;
 }
 
-.resultados-grid{
+.resultado-top{
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:20px;
+    padding-right:180px;
+}
+
+.resultado-top-img img{
+    width:520px;
+    border-radius:18px;
+}
+
+.resultado-bottom{
     display:grid;
-    grid-template-columns:1fr 2fr 1fr;
-    gap:40px;
+    grid-template-columns:220px 420px 260px;
+    justify-content:center;
+    gap:10px;
     align-items:center;
 }
 
-.resultados-titulo h2{
+.resultado-text-left h2{
     color:white;
-    font-size:42px;
+    font-size:28px;
     line-height:1.1;
+    font-weight:700;
+    max-width:180px;
 }
 
-.resultados-texto p{
-    color:white;
-    line-height:1.8;
-}
-
-.resultados-imagens{
+.resultado-bottom-img{
     display:flex;
-    gap:20px;
     justify-content:center;
 }
 
-.resultados-imagens img{
-    width:220px;
-    border-radius:15px;
+.resultado-bottom-img img{
+    width:380px;
+    border-radius:18px;
+}
+
+.resultado-text-right p{
+    color:white;
+    font-size:15px;
+    line-height:1.7;
+    max-width:240px;
 }
 
 .resultado-final{
     text-align:center;
     color:white;
-    margin-top:50px;
-    font-size:38px;
+    font-size:26px;
+    margin-top:40px;
+    font-weight:700;
+}
+
+.seta{
+    text-align:center;
+    color:#79db73;
+    font-size:55px;
+    margin-top:5px;
 }
 
 /* ==================================================
@@ -471,14 +499,25 @@ img{
     .metricas-grid{
     grid-template-columns:1fr;
 }
-    .resultados-grid{
+.resultado-bottom{
     grid-template-columns:1fr;
     text-align:center;
 }
 
-.resultados-imagens{
-    flex-direction:column;
-    align-items:center;
+.resultado-top-img img{
+    width:100%;
+}
+
+.resultado-bottom-img img{
+    width:100%;
+}
+
+.resultado-text-left h2{
+    font-size:36px;
+}
+
+.resultado-final{
+    font-size:34px;
 }
 
     .container{
