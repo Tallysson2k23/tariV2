@@ -205,12 +205,281 @@ img{
     line-height:1.8;
 }
 
+/* ==================================================
+   RESULTADOS
+================================================== */
 
+.resultados{
+    background:#53696f;
+    padding:100px 0;
+}
+
+.resultados-grid{
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.resultados-titulo h2{
+    color:white;
+    font-size:42px;
+    line-height:1.1;
+}
+
+.resultados-texto p{
+    color:white;
+    line-height:1.8;
+}
+
+.resultados-imagens{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+}
+
+.resultados-imagens img{
+    width:220px;
+    border-radius:15px;
+}
+
+.resultado-final{
+    text-align:center;
+    color:white;
+    margin-top:50px;
+    font-size:38px;
+}
+
+/* ==================================================
+   MÉTRICAS
+================================================== */
+
+.metricas{
+    padding:100px 0;
+    background:#f5f5f5;
+}
+
+.metricas-header{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 60px;
+}
+
+.metricas-header p{
+    font-size:18px;
+    color:#555;
+    line-height:1.8;
+}
+
+.metricas-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.metrica-card{
+    background:white;
+    padding:40px 20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.metrica-card h3{
+    font-size:48px;
+    color:#53696f;
+    margin-bottom:10px;
+}
+
+.metrica-card span{
+    color:#777;
+    font-size:16px;
+}
+
+/* ==================================================
+   SERVIÇOS
+================================================== */
+
+.servicos{
+    padding:120px 0;
+    background:white;
+}
+
+.section-title{
+    text-align:center;
+    font-size:48px;
+    color:#31454a;
+    margin-bottom:60px;
+}
+
+.servicos-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.servico-card{
+    background:#f5f5f5;
+    padding:35px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.servico-card:hover{
+    transform:translateY(-5px);
+}
+
+.servico-card h3{
+    color:#31454a;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.servico-card p{
+    color:#666;
+    line-height:1.8;
+}
+/* ==================================================
+   BENEFÍCIOS
+================================================== */
+
+.beneficios{
+    padding:120px 0;
+    background:#f5f5f5;
+}
+
+.beneficios-grid{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:80px;
+    align-items:center;
+}
+
+.beneficios-content h2{
+    font-size:48px;
+    color:#31454a;
+    margin-bottom:50px;
+    line-height:1.2;
+}
+
+.beneficio-item{
+    margin-bottom:30px;
+}
+
+.beneficio-item h3{
+    color:#31454a;
+    margin-bottom:8px;
+    font-size:22px;
+}
+
+.beneficio-item p{
+    color:#666;
+    line-height:1.8;
+}
+
+.beneficios-image img{
+    width:100%;
+    border-radius:25px;
+}
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.footer{
+    background:#31454a;
+    padding:80px 0 30px;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.footer-logo img{
+    width:220px;
+}
+
+.footer-info h3{
+    color:white;
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.footer-info p{
+    color:#dcdcdc;
+    margin-bottom:25px;
+}
+
+.footer-links{
+    display:flex;
+    gap:20px;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    border:1px solid rgba(255,255,255,.3);
+    padding:12px 20px;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    background:white;
+    color:#31454a;
+}
+
+.footer-copy{
+    margin-top:50px;
+    text-align:center;
+    color:#dcdcdc;
+    border-top:1px solid rgba(255,255,255,.2);
+    padding-top:20px;
+}
 /* ==================================================
    RESPONSIVIDADE (CELULAR)
 ================================================== */
 
 @media(max-width:768px){
+
+    .footer-content{
+    flex-direction:column;
+    text-align:center;
+}
+
+.footer-links{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+    .beneficios-grid{
+    grid-template-columns:1fr;
+}
+
+.beneficios-content h2{
+    font-size:36px;
+    text-align:center;
+}
+
+    .servicos-grid{
+    grid-template-columns:1fr;
+}
+
+    .metricas-grid{
+    grid-template-columns:1fr;
+}
+    .resultados-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.resultados-imagens{
+    flex-direction:column;
+    align-items:center;
+}
 
     .container{
         padding:0 20px;
