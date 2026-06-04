@@ -529,107 +529,146 @@ img{
     .servicos-title{
         font-size:70px;
     }
-
 /* ==================================================
    BENEFÍCIOS
 ================================================== */
 
 .beneficios{
-    padding:120px 0;
-    background:#f5f5f5;
+
+    background:#4f666d;
+
+    padding:90px 0;
+
+    color:white;
 }
 
-.beneficios-grid{
+.beneficios-container{
+
     display:grid;
-    grid-template-columns:1.2fr 1fr;
-    gap:80px;
+
+    grid-template-columns:1fr 1fr;
+
     align-items:center;
+
+    gap:60px;
 }
 
-.beneficios-content h2{
-    font-size:48px;
-    color:#31454a;
-    margin-bottom:50px;
-    line-height:1.2;
+.beneficios-texto h2{
+
+    font-size:72px;
+
+    margin-bottom:10px;
 }
 
-.beneficio-item{
-    margin-bottom:30px;
+.beneficios-subtitulo{
+
+    font-size:18px;
+
+    line-height:1.6;
+
+    margin-bottom:20px;
 }
 
-.beneficio-item h3{
-    color:#31454a;
-    margin-bottom:8px;
-    font-size:22px;
-}
+.linha{
 
-.beneficio-item p{
-    color:#666;
-    line-height:1.8;
-}
-
-.beneficios-image img{
     width:100%;
-    border-radius:25px;
+
+    height:1px;
+
+    background:rgba(255,255,255,.4);
+
+    margin:25px 0 30px;
 }
+
+.beneficios ul{
+
+    list-style:none;
+}
+
+.beneficios li{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:22px;
+}
+
+.check{
+
+    width:28px;
+    height:28px;
+
+    background:#39c46a;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    font-weight:bold;
+
+    flex-shrink:0;
+}
+
+.beneficios-img img{
+
+    width:100%;
+
+    max-width:500px;
+
+    display:block;
+
+    margin:auto;
+
+    border-radius:30px;
+}
+
 
 /* ==================================================
    FOOTER
 ================================================== */
 
 .footer{
-    background:#31454a;
-    padding:80px 0 30px;
+
+    background:#eef0ef;
+
+    padding:40px 0;
 }
 
-.footer-content{
+.footer-container{
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
-    gap:50px;
+}
+
+.footer-social{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+}
+
+.footer-social img{
+
+    width:42px;
 }
 
 .footer-logo img{
-    width:220px;
+
+    width:170px;
 }
 
-.footer-info h3{
-    color:white;
-    font-size:32px;
-    margin-bottom:15px;
-}
-
-.footer-info p{
-    color:#dcdcdc;
-    margin-bottom:25px;
-}
-
-.footer-links{
-    display:flex;
-    gap:20px;
-}
-
-.footer-links a{
-    color:white;
-    text-decoration:none;
-    border:1px solid rgba(255,255,255,.3);
-    padding:12px 20px;
-    border-radius:50px;
-    transition:.3s;
-}
-
-.footer-links a:hover{
-    background:white;
-    color:#31454a;
-}
-
-.footer-copy{
-    margin-top:50px;
-    text-align:center;
-    color:#dcdcdc;
-    border-top:1px solid rgba(255,255,255,.2);
-    padding-top:20px;
-}
 /* ==================================================
    RESPONSIVIDADE (CELULAR)
 ================================================== */
