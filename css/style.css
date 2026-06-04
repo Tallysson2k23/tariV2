@@ -52,6 +52,7 @@ img{
 
 .logo img{
     width:250px;
+    margin-top:-40px;
 }
 
 .menu{
@@ -160,44 +161,67 @@ img{
 ================================================== */
 
 .sobre{
-    padding:120px 0;
+    padding:140px 0;
     background:white;
+
+    border-top-left-radius:80px;
+
+    position:relative;
+    margin-top:-40px;
+    z-index:10;
 }
 
 .sobre-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:60px;
+    gap:80px;
     align-items:center;
+    position:relative;
 }
 
 .sobre-left{
-    padding-right:60px;
-    border-right:1px solid #d9d9d9;
+    padding-right:80px;
+    border-right:1px solid #aeb7ba;
 }
 
 .sobre-left h2{
-    font-size:42px;
-    color:#31454a;
-    margin-bottom:20px;
+    font-size:58px;
+    color:#4f666d;
+    margin-bottom:25px;
 }
 
 .sobre-left p{
-    color:#666;
-    line-height:1.8;
-    font-size:18px;
+    color:#5f6b6f;
+    line-height:1.7;
+    font-size:20px;
 }
 
 .sobre-right{
     display:flex;
     flex-direction:column;
-    gap:30px;
+    gap:50px;
+    position:relative;
+}
+
+.sobre-right::before{
+    content:"";
+
+    position:absolute;
+
+    left:-80px;
+    top:50%;
+
+    width:520px;
+    height:1px;
+
+    background:#aeb7ba;
 }
 
 .sobre-card h3{
-    color:#31454a;
-    margin-bottom:10px;
-    font-size:28px;
+    color:#4f666d;
+    margin-bottom:15px;
+    font-size:46px;
+    font-weight:700;
 }
 
 .sobre-card p{
@@ -215,27 +239,45 @@ img{
 
 .resultados{
     background:#566f75;
-    padding:90px 0;
+    padding:80px 0 60px;
 }
+
+/* IMAGEM SUPERIOR */
 
 .resultado-top{
     display:flex;
-    justify-content:flex-end;
-    margin-bottom:20px;
-    padding-right:180px;
+    justify-content:center;
+    margin-bottom:25px;
+}
+
+.resultado-top-img{
+    width:100%;
+    display:flex;
+    justify-content:center;
 }
 
 .resultado-top-img img{
-    width:520px;
+    width:560px;
     border-radius:18px;
 }
 
+/* BLOCO INFERIOR */
+
 .resultado-bottom{
-    display:grid;
-    grid-template-columns:220px 420px 260px;
-    justify-content:center;
-    gap:10px;
+    width:100%;
+    max-width:900px;
+    margin:0 auto;
+
+    display:flex;
     align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+
+/* TEXTO ESQUERDA */
+
+.resultado-text-left{
+    width:180px;
 }
 
 .resultado-text-left h2{
@@ -243,41 +285,49 @@ img{
     font-size:28px;
     line-height:1.1;
     font-weight:700;
-    max-width:180px;
 }
 
+/* IMAGEM CENTRAL */
+
 .resultado-bottom-img{
-    display:flex;
-    justify-content:center;
+    width:380px;
 }
 
 .resultado-bottom-img img{
-    width:380px;
+    width:100%;
     border-radius:18px;
+}
+
+/* TEXTO DIREITA */
+
+.resultado-text-right{
+    width:220px;
 }
 
 .resultado-text-right p{
     color:white;
     font-size:15px;
     line-height:1.7;
-    max-width:240px;
 }
+
+/* TÍTULO FINAL */
 
 .resultado-final{
     text-align:center;
     color:white;
-    font-size:26px;
-    margin-top:40px;
+    font-size:24px;
     font-weight:700;
+    margin-top:35px;
 }
+
+/* SETA */
 
 .seta{
     text-align:center;
-    color:#79db73;
-    font-size:55px;
+    color:#82df74;
+    font-size:48px;
     margin-top:5px;
 }
-
 /* ==================================================
    MÉTRICAS
 ================================================== */
@@ -499,25 +549,29 @@ img{
     .metricas-grid{
     grid-template-columns:1fr;
 }
+
 .resultado-bottom{
-    grid-template-columns:1fr;
+    flex-direction:column;
     text-align:center;
+}
+
+.resultado-text-left,
+.resultado-text-right,
+.resultado-bottom-img{
+    width:100%;
 }
 
 .resultado-top-img img{
     width:100%;
 }
 
-.resultado-bottom-img img{
-    width:100%;
-}
-
 .resultado-text-left h2{
-    font-size:36px;
+    max-width:none;
+    font-size:32px;
 }
 
 .resultado-final{
-    font-size:34px;
+    font-size:30px;
 }
 
     .container{
