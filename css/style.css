@@ -8,6 +8,10 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background:#f5f5f5;
@@ -232,28 +236,55 @@ img{
 /* ==================================================
    RESULTADOS
 ================================================== */
+.resultado-top{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    margin-bottom:30px;
+}
 
+.resultado-top-text{
+    width:220px;
+}
+
+.resultado-top-text h2{
+    color:white;
+    font-size:30px;
+    line-height:1.1;
+    font-weight:700;
+}
+
+.resultado-top-img img{
+    width:560px;
+    border-radius:18px;
+}
 /* ==================================================
    RESULTADOS
 ================================================== */
 
 .resultados{
-    background:#566f75;
-    padding:80px 0 60px;
+    background:#586f75;
+    padding:90px 0;
 }
-
-/* IMAGEM SUPERIOR */
 
 .resultado-top{
     display:flex;
     justify-content:center;
+    align-items:center;
+    gap:40px;
     margin-bottom:25px;
 }
 
-.resultado-top-img{
-    width:100%;
-    display:flex;
-    justify-content:center;
+.resultado-top-text{
+    width:220px;
+}
+
+.resultado-top-text h2{
+    color:white;
+    font-size:28px;
+    line-height:1.15;
+    font-weight:700;
 }
 
 .resultado-top-img img{
@@ -261,72 +292,59 @@ img{
     border-radius:18px;
 }
 
-/* BLOCO INFERIOR */
+/* BLOCO DE BAIXO */
 
 .resultado-bottom{
-    width:100%;
-    max-width:900px;
-    margin:0 auto;
-
     display:flex;
-    align-items:center;
     justify-content:center;
-    gap:20px;
-}
-
-/* TEXTO ESQUERDA */
-
-.resultado-text-left{
-    width:180px;
-}
-
-.resultado-text-left h2{
-    color:white;
-    font-size:28px;
-    line-height:1.1;
-    font-weight:700;
-}
-
-/* IMAGEM CENTRAL */
-
-.resultado-bottom-img{
-    width:380px;
+    align-items:center;
+    gap:15px;
 }
 
 .resultado-bottom-img img{
-    width:100%;
+    width:480px;
     border-radius:18px;
 }
 
-/* TEXTO DIREITA */
-
 .resultado-text-right{
-    width:220px;
+    width:260px;
 }
 
 .resultado-text-right p{
     color:white;
     font-size:15px;
-    line-height:1.7;
+    line-height:1.8;
 }
 
-/* TÍTULO FINAL */
+/* RESULTADO */
 
 .resultado-final{
     text-align:center;
     color:white;
     font-size:24px;
+    margin-top:40px;
     font-weight:700;
-    margin-top:35px;
 }
 
 /* SETA */
 
 .seta{
+    display:block;
     text-align:center;
+
     color:#82df74;
-    font-size:48px;
+
+    font-size:60px;
+
+    text-decoration:none;
+
     margin-top:5px;
+
+    transition:.3s;
+}
+
+.seta:hover{
+    transform:translateY(6px);
 }
 /* ==================================================
    MÉTRICAS
