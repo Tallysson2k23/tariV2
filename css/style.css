@@ -245,19 +245,19 @@ img{
 }
 
 .resultado-top-text{
-    width:220px;
+    width:320px;
 }
 
 .resultado-top-text h2{
+    font-size:54px;
+    line-height:1.05;
     color:white;
-    font-size:30px;
-    line-height:1.1;
     font-weight:700;
 }
 
 .resultado-top-img img{
-    width:560px;
-    border-radius:18px;
+    width:800px;
+    border-radius:20px;
 }
 /* ==================================================
    RESULTADOS
@@ -302,18 +302,17 @@ img{
 }
 
 .resultado-bottom-img img{
-    width:480px;
-    border-radius:18px;
+    width:700px;
+    border-radius:20px;
 }
-
 .resultado-text-right{
-    width:260px;
+    width:420px;
 }
 
 .resultado-text-right p{
     color:white;
-    font-size:15px;
-    line-height:1.8;
+    font-size:24px;
+    line-height:1.7;
 }
 
 /* RESULTADO */
