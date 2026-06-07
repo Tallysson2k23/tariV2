@@ -18,7 +18,15 @@
             <img src="assets/images/logo.png" alt="Tari Comunicação">
         </div>
 
-        <nav class="menu">
+        <!-- BOTÃO HAMBURGUER -->
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <!-- MENU -->
+
+        <nav class="menu" id="menu">
 
             <a href="#inicio">Início</a>
             <a href="#servicos">Serviços</a>
@@ -416,6 +424,25 @@
 </footer>
 
 <script src="js/script.js"></script>
+
+<script>
+
+const menuToggle = document.getElementById('menuToggle');
+const menu = document.getElementById('menu');
+
+menuToggle.addEventListener('click', () => {
+
+    menu.classList.toggle('active');
+
+    if(menu.classList.contains('active')){
+        menuToggle.innerHTML = '✕';
+    }else{
+        menuToggle.innerHTML = '☰';
+    }
+
+});
+
+</script>
 
 </body>
 </html>
