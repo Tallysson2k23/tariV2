@@ -687,109 +687,93 @@ img{
 
     width:190px;
 }
+/* ==========================================
+   RESPONSIVIDADE COMPLETA
+========================================== */
 
-/* ==================================================
-   RESPONSIVIDADE (CELULAR)
-================================================== */
+@media screen and (max-width: 768px){
 
-@media(max-width:768px){
-
-    .metricas-grid{
-    grid-template-columns:1fr;
-}
-
-.metricas-header p{
-    font-size:28px;
-}
-
-    .footer-content{
-    flex-direction:column;
-    text-align:center;
-}
-
-.footer-links{
-    justify-content:center;
-    flex-wrap:wrap;
-}
-
-    .beneficios-grid{
-    grid-template-columns:1fr;
-}
-
-.beneficios-content h2{
-    font-size:36px;
-    text-align:center;
-}
-
-    .servicos-grid{
-    grid-template-columns:1fr;
-}
-
-    .metricas-grid{
-    grid-template-columns:1fr;
-}
-
-.resultado-bottom{
-    flex-direction:column;
-    text-align:center;
-}
-
-.resultado-text-left,
-.resultado-text-right,
-.resultado-bottom-img{
-    width:100%;
-}
-
-.resultado-top-img img{
-    width:100%;
-}
-
-.resultado-text-left h2{
-    max-width:none;
-    font-size:32px;
-}
-
-.resultado-final{
-    font-size:30px;
-}
+    /* CONTAINER */
 
     .container{
         padding:0 20px;
     }
 
+    /* HEADER */
+
+    .header{
+        padding:20px 0;
+    }
+
+    .header-container{
+        flex-direction:column;
+        gap:20px;
+    }
+
     .logo img{
         width:180px;
+        margin-top:0;
     }
 
     .menu{
+        flex-wrap:wrap;
+        justify-content:center;
         gap:10px;
     }
 
     .menu a{
-        padding:10px 15px;
-        font-size:12px;
+        padding:10px 18px;
+        font-size:13px;
     }
+
+    /* HERO */
 
     .hero{
         min-height:auto;
-        padding:180px 0 100px;
+        padding:180px 0 80px;
     }
 
     .hero-bg{
         width:100%;
-        opacity:.15;
+        opacity:.18;
     }
 
     .hero-content{
+        max-width:100%;
         text-align:center;
     }
 
     .hero-content h1{
         font-size:42px;
+        line-height:1.1;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .hero-btn{
+        margin-top:40px;
+    }
+
+    .btn-primary{
+        width:100%;
+        max-width:350px;
+        text-align:center;
+        padding:18px 25px;
+        font-size:18px;
+    }
+
+    /* SOBRE */
+
+    .sobre{
+        padding:80px 0;
+        border-top-left-radius:60px;
     }
 
     .sobre-grid{
         grid-template-columns:1fr;
+        gap:50px;
     }
 
     .sobre-left{
@@ -797,4 +781,134 @@ img{
         padding-right:0;
     }
 
+    .sobre-left h2{
+        font-size:42px;
+        text-align:center;
+    }
+
+    .sobre-left p{
+        text-align:center;
+        font-size:18px;
+    }
+
+    .sobre-right::before{
+        display:none;
+    }
+
+    .sobre-card h3{
+        font-size:32px;
+    }
+
+    /* RESULTADOS */
+
+    .resultado-top{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .resultado-top-text{
+        width:100%;
+    }
+
+    .resultado-top-text h2{
+        font-size:34px;
+    }
+
+    .resultado-top-img img{
+        width:100%;
+    }
+
+    .resultado-bottom{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .resultado-bottom-img img{
+        width:100%;
+    }
+
+    .resultado-text-right{
+        width:100%;
+    }
+
+    .resultado-text-right p{
+        font-size:18px;
+    }
+
+    /* MÉTRICAS */
+
+    .metricas{
+        padding:80px 0;
+    }
+
+    .metricas-header p{
+        font-size:24px;
+    }
+
+    .metricas-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    /* SERVIÇOS */
+
+    .servicos{
+        padding:80px 0;
+    }
+
+    .servicos-title{
+        font-size:50px;
+        margin-bottom:50px;
+    }
+
+    .servicos-linha-1,
+    .servicos-linha-2{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .servico-card{
+        width:100%;
+        max-width:350px;
+    }
+
+    /* BENEFÍCIOS */
+
+    .beneficios{
+        padding:80px 0;
+    }
+
+    .beneficios-container{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .beneficios-texto h2{
+        font-size:42px;
+        text-align:center;
+    }
+
+    .beneficios-subtitulo{
+        text-align:center;
+    }
+
+    .beneficios-img{
+        order:-1;
+    }
+
+    /* FOOTER */
+
+    .footer-container{
+        flex-direction:column;
+        align-items:center;
+        gap:30px;
+    }
+
+    .footer-social{
+        align-items:center;
+    }
+
+    .footer-logo img{
+        width:150px;
+    }
 }
