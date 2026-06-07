@@ -663,9 +663,8 @@ img{
 
     justify-content:space-between;
 
-    align-items:center;
+    align-items:flex-end;
 }
-
 .footer-social{
     display:flex;
     flex-direction:column;
@@ -686,7 +685,7 @@ img{
 
 .footer-logo img{
 
-    width:170px;
+    width:190px;
 }
 
 /* ==================================================
