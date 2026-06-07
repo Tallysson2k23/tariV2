@@ -150,9 +150,15 @@ img{
     background:#4f6870;
     color:white;
     text-decoration:none;
-    padding:15px 35px;
+
+    padding:22px 80px;
+
     border-radius:50px;
-    font-weight:bold;
+
+     font-weight:700;
+
+    font-size:28px;
+
     transition:.3s;
 }
 
@@ -160,6 +166,12 @@ img{
     transform:translateY(-3px);
 }
 
+.hero-btn{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:60px;
+}
 
 /* ==================================================
    SEÇÃO SOBRE
